@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgba(85, 83, 83, 0.815) url(gettyimages-484270482.jpg);
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+}
+.container
+{
+
+position: absolute;
+top: 60px;
+left: 60px;
+right: 60px;
+bottom: 60px;
+background: url(gettyimages-484270482.jpg);
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 50px 50px rgba(0,0,0,0.5),
+            0 0 0 100px rgba(0,0,0,.1);
+}
+
+.container h2{
+    text-align:center;
+    font-size: 8em;
+    line-height: 0.6em;
+    color: #333;
+    margin-top: -150px;
+    
+}
+
+.container h2 span
+{
+    display:block;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 0.2em;
+}
+
+.countdown
+{
+    display:flex;
+    margin-top: 50px;
+}
+
+.countdown div
+{
+    position:relative;
+    width: 95px;
+    height: 95px;
+    line-height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+}
+.countdown div:before
+{
+    content:'';
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    width: 100%;
+    height: 35px;
+    background:#ff3;
+    color: #333;
+    font-size: 0.35em;
+    
+    line-height: 35px;
+    font-weight: 300;
+}
+.countdown div#day:before
+{
+    content:'Dias';
+    font-weight: 530;
+
+}
+.countdown div#hour:before
+{
+    content:'Horas';
+    font-weight: 530;
+
+}
+.countdown div#minute:before
+{
+    content:'Minutos';
+    font-weight: 530;
+
+}
+.countdown div#second:before
+{
+    content:'Segundos';
+    font-weight: 530;
+
+}
